@@ -1,0 +1,5 @@
+pradeep,Go to library,ongoing,60,8am,Good habit
+pradeep,Go to swim,ongoing,50,5pm,Good
+lathish,Wake up early morning,ongoing,100,5 am,Good for health
+lathish,Go for a walk,ongoing,90,7 am,Good for health
+lathish,Wash your bike,ongoing,80,11am,Good
