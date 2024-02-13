@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/movie log.css">
+</head>
+<style>
+    body{
+        background: url(img/netflix.jpg) no-repeat;
+    }
+</style>
+<body>
+    <nav>
+        <a href="home.html"><img src="img/logo.png" class="logo"></a>
+    </nav>
+    
+    <div class="log-bx">
+        <h2>Sign In</h2>
+        <form action="home.html">
+            <div class="log-form">
+                <input type="text" required onblur="validateUser()" id="user-input">
+                <label>Email or phone number</label>
+            </div>
+            <div class="log-form">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="form-help">
+                <div class="rembr-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="">Need help?</a>
+            </div>
+        </form>
+        <p>New to MovieTos? <a href="#">Sign up now</a></p>
+        <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot
+            <a href="">Learn more.</a>
+        </small>
+    </div>
+
+    <script src="js/project.js"></script>
+</body>
+</html>

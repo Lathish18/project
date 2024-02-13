@@ -1,0 +1,11 @@
+.flex-img{
+    height: 260px;
+    width: 190px;
+    margin: 30px 10px 0 10px;
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+    position: relative;
+    transition: width 0.3s;
+    border-radius: 10px;
+}

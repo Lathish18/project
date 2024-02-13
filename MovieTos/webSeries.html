@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Libre+Baskerville&family=Libre+Franklin&family=Proza+Libre&family=Trirong&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <ul class="navbar" id="navBar">
+            <li><div class="src-bx li-src-bx">
+                <input type="text" placeholder="Search movies..">
+                <i class="bx bx-search"></i>
+            </div></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a  href="webSeries.html"   style="border-bottom: 2px solid #e50914;">Web-Series</a></li>
+            <li><a href="movies.html">Top-Imdb</a></li>
+            <li><a href="movies.html">Popular</a></li>
+            <li><a href="movie log.html" class="sign-btn">SignIn</a></li>
+        </ul>
+        
+        <div class="src-bx">
+            <input type="text" placeholder="Search movies..">
+            <i class="bx bx-search"></i>
+        </div>
+        
+        <div class="watchlist">
+            <i class='bx bx-heart'></i>
+            <a href="movie log.html" class="btn sign-icon"><i class='bx bx-user'></i></a>
+            <i class="bx bx-menu" id="menu-icon" onclick="navFunction()"></i>
+        </div>
+    </header>
+
+    <section class="container" style="height: 65vh;">
+        <div class="flex" style="padding-top: 50px;">
+            <div class="flex-img" style="background: url(img/wonka.jpg) center; background-size: cover;">
+                <p class="mov-name">Wonka </p>
+                <a href="love at first sight.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.2</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/blu\ beetle.jpg) center; background-size: cover;">
+                <p class="mov-name">Blue Beetle</p>
+                <a href="blue beetle.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.7</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/insidious.webp) center; background-size: cover;">
+                <p class="mov-name">Insidious<br>The red door</p>
+                <a href="insidious.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.8</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/avatar.webp) center; background-size: cover;">
+                <p class="mov-name">Avatar<br>The way of water</p>
+                <a href="avatar.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.6</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/haunting.png) center; background-size: cover;">
+                <p class="mov-name">Haunting of the<br>queen marry</p>
+                <a href="haunting.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>4.3</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/evil\ dead\ rise.jpg) center; background-size: cover;">
+                <p class="mov-name">Evil dead<br>rise</p>
+                <a href="evil dead rise.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.6</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="container" style="height: 55vh;">
+        <div class="flex">
+            <div class="flex-img" style="background: url(img/wonka.jpg) center; background-size: cover;">
+                <p class="mov-name">Wonka </p>
+                <a href="love at first sight.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.2</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/blu\ beetle.jpg) center; background-size: cover;">
+                <p class="mov-name">Blue Beetle</p>
+                <a href="blue beetle.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.7</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/insidious.webp) center; background-size: cover;">
+                <p class="mov-name">Insidious<br>The red door</p>
+                <a href="insidious.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.8</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/avatar.webp) center; background-size: cover;">
+                <p class="mov-name">Avatar<br>The way of water</p>
+                <a href="avatar.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.6</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/haunting.png) center; background-size: cover;">
+                <p class="mov-name">Haunting of the<br>queen marry</p>
+                <a href="haunting.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>4.3</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/evil\ dead\ rise.jpg) center; background-size: cover;">
+                <p class="mov-name">Evil dead<br>rise</p>
+                <a href="evil dead rise.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.6</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="container" style="height: 55vh;">
+        
+        <div class="flex">
+            <div class="flex-img" style="background: url(img/wonka.jpg) center; background-size: cover;">
+                <p class="mov-name">Wonka </p>
+                <a href="love at first sight.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.2</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/blu\ beetle.jpg) center; background-size: cover;">
+                <p class="mov-name">Blue Beetle</p>
+                <a href="blue beetle.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.7</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/insidious.webp) center; background-size: cover;">
+                <p class="mov-name">Insidious<br>The red door</p>
+                <a href="insidious.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.8</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/avatar.webp) center; background-size: cover;">
+                <p class="mov-name">Avatar<br>The way of water</p>
+                <a href="avatar.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.6</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/haunting.png) center; background-size: cover;">
+                <p class="mov-name">Haunting of the<br>queen marry</p>
+                <a href="haunting.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>4.3</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/evil\ dead\ rise.jpg) center; background-size: cover;">
+                <p class="mov-name">Evil dead<br>rise</p>
+                <a href="evil dead rise.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.6</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="container" style="height: 60vh;">
+        
+        <div class="flex">
+            <div class="flex-img" style="background: url(img/wonka.jpg) center; background-size: cover;">
+                <p class="mov-name">Wonka </p>
+                <a href="love at first sight.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.2</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/blu\ beetle.jpg) center; background-size: cover;">
+                <p class="mov-name">Blue Beetle</p>
+                <a href="blue beetle.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.7</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/insidious.webp) center; background-size: cover;">
+                <p class="mov-name">Insidious<br>The red door</p>
+                <a href="insidious.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.8</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/avatar.webp) center; background-size: cover;">
+                <p class="mov-name">Avatar<br>The way of water</p>
+                <a href="avatar.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>7.6</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/haunting.png) center; background-size: cover;">
+                <p class="mov-name">Haunting of the<br>queen marry</p>
+                <a href="haunting.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>4.3</h6>
+                </div>
+            </div>
+            <div class="flex-img" style="background: url(img/evil\ dead\ rise.jpg) center; background-size: cover;">
+                <p class="mov-name">Evil dead<br>rise</p>
+                <a href="evil dead rise.html"><i class='bx bx-play-circle'></i></a>
+                <i class='bx bxs-bookmark-plus bookmark'></i>
+                <span class="addTo">Add To Watchlist</span>
+                <div class="imdb">
+                    <img src="img/imdb.png" alt="IMDb">
+                    <h6>6.6</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="break"></div><br>
+    <section class="footer">
+        <h2>About Us</h2><br>
+        <p>MovieTos is the leading free, premium, on demand video streaming and downloadig website. We have the largest library of content with thousands of movies and television shows, the best streaming technology, and a personalization engine to recommend the best content for you. Available on all of your devices, we give you the best way to discover new content, completely free.</p><br>
+        <div class="soc-med">
+            <div>
+                <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-whatsapp' ></i></a>
+                <div class="underline"></div>
+            </div> 
+        </div> <br>
+        <p>Copyright © 2023 MovieTos, Inc.</p> <br>
+        <p>MovieTos is a registered trademark of MovieTos, Inc.</p>
+        <p>All rights reserved.
+        </p><br>
+        <p style="opacity: 0.4;">Admin @ _L_a_t_h_i_z_z_</p><br>
+    </section>
+
+
+    <script src="js/project.js"></script>
+ 
+    
+</body>
+</html>
