@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+    <h2>Register</h2>
+    <form method="post" class="form">
+        {% csrf_token %}
+
+        <div>
+            <label for="{{ form.username.id_for_label }}">Username:</label>
+            {{ form.username }}
+            {{ form.username.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.password1.id_for_label }}">Password:</label>
+            {{ form.password1 }}
+            {{ form.password1.errors }}
+        </div>
+
+        <div>
+            <label for="{{ form.password2.id_for_label }}">Confirm Password:</label>
+            {{ form.password2 }}
+            {{ form.password2.errors }}
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+    {% endblock %}
+</body>
+</html>

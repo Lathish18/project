@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .add-task, .logout {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+        }
+
+        .logout {
+            color: #dc3545;
+        }
+
+        .action-column a {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        {% block content %}
+        <h2>Your Tasks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Assigned To</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ task.name }}</td>
+                        <td>{{ task.status }}</td>
+                        <td>{{ task.assign_to }}</td>
+                        <td class="action-column">
+                            <a href="{% url 'task_detail' task.id %}">Update / Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a class="add-task" href="{% url 'add_task' %}">Add Task</a>
+        <a class="logout" href="{% url 'logout' %}">Logout</a>
+        {% endblock %}
+    </div>
+</body>
+</html>
